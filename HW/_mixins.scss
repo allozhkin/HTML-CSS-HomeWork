@@ -4,3 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
 }
+@mixin centerContent($siteWidth){
+    padding-left: calc(50% - $siteWidth/2);
+    padding-right: calc(50% - $siteWidth/2);
+}

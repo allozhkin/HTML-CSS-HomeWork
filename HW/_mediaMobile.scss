@@ -1,0 +1,134 @@
+@media(min-width:320px) and (max-width:767px) {
+    .center {
+        @include centerContent(374px);
+    }
+
+    .header {
+
+        &__personal {
+            visibility: hidden;
+            display: none;
+        }
+
+        &__basket {
+            visibility: hidden;
+            display: none;
+        }
+    }
+
+    .top {
+        min-height: 363px;
+        margin-bottom: 64px;
+
+        &__left {
+            visibility: hidden;
+            display: none;
+        }
+
+        &__right {
+            padding-top: 148px;
+            flex-wrap: nowrap;
+
+        }
+    }
+
+
+    .rectangle {
+        width: 12px;
+        height: 61px;
+    }
+
+    .topic {
+        &__title {
+            font-size: 38px;
+        }
+
+        &__sub {
+            &__subtitle1 {
+                font-size: 20px;
+            }
+
+            &__subtitle2 {
+                font-size: 20px;
+            }
+
+        }
+
+    }
+
+
+
+    .items {
+        padding-bottom: 64px;
+    }
+
+    .heading {
+        margin-bottom: 64px;
+
+        &__txt {
+            text-align: center;
+        }
+    }
+
+
+    .product-box {
+        margin-bottom: 61px;
+    }
+
+
+    .advertisments {
+        min-height: 610px;
+        flex-direction: column;
+
+    }
+
+    .advertisment {
+        text-align: center;
+
+        &__img {
+            margin-bottom: 20px;
+        }
+    }
+
+
+    .subscribe {
+        min-height: 550px;
+        gap: 59px;
+        flex-direction: column;
+        padding: 64px 16px 110px;
+        // padding-top: 64px;
+        // padding-bottom: 110px;
+
+        &__text {
+            font-size: 18px;
+
+            max-width: 343px;
+            min-height: 73px;
+        }
+
+        &__subtitle {
+            width: 271px;
+            font-size: 14px;
+        }
+
+        &__right-2 {
+            max-width: 343px;
+        }
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            max-width: 85px;
+        }
+    }
+
+
+
+    .footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 40px;
+    }
+}
