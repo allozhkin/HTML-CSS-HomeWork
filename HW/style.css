@@ -535,7 +535,19 @@ body {
 }
 
 .carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: #F7F7F7;
+}
+.carousel__button {
+  margin: 9px;
+  color: #D8D8D8;
+}
+.carousel .my-hover:hover .visually-hidden path {
+  fill: #F16D7F;
 }
 
 .product-description {
@@ -640,6 +652,12 @@ body {
   margin-bottom: 63px;
   gap: 23px;
 }
+.product-description .details-choose__item[open] .details-choose__summary path {
+  fill: #F16D7F;
+}
+.product-description .details-choose__item[open] .details-choose__heading {
+  color: #F16D7F;
+}
 .product-description .details-choose__summary {
   display: flex;
   align-items: center;
@@ -651,6 +669,12 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.product-description .details-choose__summary:hover .details-choose__heading {
+  color: #F16D7F;
+}
+.product-description .details-choose__summary:hover path {
+  fill: #F16D7F;
 }
 
 .box-content {
@@ -815,6 +839,28 @@ body {
   left: -9px;
   top: 22px;
   z-index: 1;
+}
+
+.vector {
+  height: 43px;
+  margin-bottom: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vector__pagination {
+  height: 35px;
+  width: 268px;
+  border: 1px solid #ebebeb;
+}
+.vector .page-link {
+  color: #C4C4C4;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: none;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

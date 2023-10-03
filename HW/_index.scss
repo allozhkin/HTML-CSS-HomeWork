@@ -329,6 +329,7 @@ body {
 
         &__link {
             display: flex;
+
         }
 
         &__add {
@@ -359,10 +360,11 @@ body {
         &__cart {
             margin-right: 11px;
         }
+
         &:hover .product__add {
             display: flex;
         }
-    
+
         &:hover .product__img {
             filter: brightness(0.5);
         }

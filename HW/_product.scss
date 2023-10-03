@@ -1,5 +1,16 @@
 .carousel {
+    @include centerflex();
+    justify-content: space-between;
     background-color: #F7F7F7;
+
+    &__button {
+        margin: 9px;
+        color: #D8D8D8;
+    }
+
+    .my-hover:hover .visually-hidden path {
+        fill: $colorSelectSite;
+    }
 }
 
 .product-description {
@@ -117,6 +128,18 @@
         margin-bottom: 63px;
         gap: 23px;
 
+        &__item[open] {
+            .details-choose {
+                &__summary path {
+                    fill: $colorSelectSite;
+                }
+
+                &__heading {
+                    color: $colorSelectSite;
+                }
+            }
+        }
+
         &__summary {
             display: flex;
             align-items: center;
@@ -128,6 +151,15 @@
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+
+            &:hover .details-choose__heading {
+                color: $colorSelectSite;
+            }
+
+            &:hover path {
+                fill: $colorSelectSite;
+            }
+
         }
     }
 }
