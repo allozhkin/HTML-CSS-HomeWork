@@ -55,6 +55,77 @@ body {
     &__right {
         display: flex;
         align-items: center;
+
+        .dropbox__checkbox {
+            visibility: hidden;
+        }
+
+        .menu {
+            position: relative;
+
+            #dropdown:checked~.dropdown__menu {
+                transition: top 0.3s;
+                top: 52px;
+
+            }
+
+            #dropdown:not(:checked)~.dropdown__menu {
+                top: -1000px;
+                transition: top 0.3s;
+            }
+        }
+
+        .dropdown__menu {
+            box-sizing: border-box;
+            padding: 32px;
+            position: absolute;
+            width: $widthBurgerMenu;
+            height: $heightBurgerMenu;
+            top: 1000px;
+            background-color: #FFF;
+            filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
+            z-index: 2;
+
+            &__title {
+                color: $colorText;
+                font-family: Lato;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 24px;
+            }
+
+            .catalog__name {
+                color: $colorSelectSite;
+                font-family: Lato;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 12px;
+            }
+            .catalog__list{
+                min-height: 113px;
+                margin-bottom: 20px;
+                padding-left: 21px;
+                display: flex;
+                flex-direction: column;
+                gap: 11px;
+            }
+            .list__link {
+                color: #6F6E6E;
+                font-family: Lato;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                &:hover{
+                    color: $colorSelectSite;
+                }
+            }
+
+        }
     }
 
     &__hamburger {
@@ -232,7 +303,6 @@ body {
 
 
 .breadcrumbs__link {
-    text-decoration: none;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -398,9 +468,7 @@ body {
 
 
 .product-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    @include centerflex();
     gap: 30px;
     padding-bottom: 48px;
 }
@@ -490,7 +558,6 @@ body {
 
 .link_brows {
     position: relative;
-    margin-bottom: 74px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,8 +578,7 @@ body {
 }
 
 .link__prod {
-    text-decoration: none;
-    color: #F26376;
+    color:$colorSelectSite;
     font-family: Lato;
     font-size: 16px;
     font-style: normal;
@@ -571,21 +637,7 @@ body {
     background-color: #F7F7F7;
 }
 
-.carousel-control-prev-icon {
-    background-image: url(img/arrow-left-alt2.svg);
 
-    &:hover {
-        background-image: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z' fill='%23F16D7F'/%3E%3C/svg%3E);
-    }
-}
-
-.carousel-control-next {
-    background-image: url(img/arrow-right-alt2.svg);
-
-    &:hover {
-        background-image: url(data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='31' height='31' viewBox='0 0 31 31' fill='none'%3E%3Cpath d='M21.6998 7.7499L13.9498 15.4999L21.6998 23.2499L20.1498 26.3499L9.2998 15.4999L20.1498 4.6499L21.6998 7.7499Z' fill='%23F16D7F'/%3E%3C/svg%3E);
-    }
-}
 
 .product-description {
     position: relative;
@@ -740,6 +792,13 @@ body {
         align-items: center;
     }
 
+    &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__right-1 {
         display: flex;
         flex-direction: column;
@@ -782,6 +841,7 @@ body {
     &__form {
         display: flex;
         margin-top: 32px;
+        width: 343px;
     }
 
     &__button {
@@ -807,7 +867,7 @@ body {
     }
 
     &__input {
-        width: 256px;
+        width: 243px;
         height: 49px;
         border-top-left-radius: 24px;
         border-bottom-left-radius: 24px;
@@ -975,7 +1035,9 @@ body {
         min-height: 550px;
         gap: 59px;
         flex-direction: column;
-        padding: 1%;
+        padding: 64px 16px 110px;
+        // padding-top: 64px;
+        // padding-bottom: 110px;
 
         &__text {
             font-size: 18px;
@@ -985,6 +1047,7 @@ body {
         }
 
         &__subtitle {
+            width: 271px;
             font-size: 14px;
         }
 
@@ -993,7 +1056,7 @@ body {
         }
 
         &__left {
-            max-width: 200px;
+            width: 100%;
         }
 
         &__right {
