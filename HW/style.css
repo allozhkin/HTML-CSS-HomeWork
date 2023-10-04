@@ -715,6 +715,9 @@ body {
   line-height: 17px;
   color: #636363;
 }
+.top-head .breadcrumbs__link:not(:last-child)::after {
+  content: " /";
+}
 .top-head .breadcrumbs__link:hover {
   color: #F16D7F;
 }

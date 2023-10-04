@@ -25,6 +25,10 @@
         line-height: 17px;
         color: #636363;
 
+        &:not(:last-child)::after {
+            content: ' /';
+        }
+
         &:hover {
             color: $colorSelectSite;
         }
@@ -206,8 +210,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &__pagination{
-        
+
+    &__pagination {
+
         height: 35px;
         width: 268px;
         border: 1px solid #ebebeb;
@@ -222,6 +227,6 @@
         font-weight: 300;
         line-height: normal;
         border: none;
-        
+
     }
 }
