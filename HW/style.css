@@ -46,6 +46,9 @@ body {
   align-items: center;
   gap: 41px;
 }
+.header__left .button_search:hover path {
+  fill: #F16D7F;
+}
 .header__right {
   display: flex;
   align-items: center;
@@ -55,6 +58,9 @@ body {
 }
 .header__right .menu {
   position: relative;
+}
+.header__right .menu:hover path {
+  fill: #F16D7F;
 }
 .header__right .menu #dropdown:checked ~ .dropdown__menu {
   transition: top 0.3s;
@@ -117,6 +123,12 @@ body {
 }
 .header__personal {
   margin-right: 42px;
+}
+.header__personal:hover path {
+  fill: #F16D7F;
+}
+.header__basket:hover path {
+  fill: #F16D7F;
 }
 
 .top {

@@ -45,11 +45,16 @@ body {
         display: flex;
         align-items: center;
         gap: 41px;
+
+        .button_search:hover path {
+            fill: $colorSelectSite;
+        }
     }
 
     &__right {
         display: flex;
         align-items: center;
+
 
         .dropbox__checkbox {
             visibility: hidden;
@@ -57,6 +62,10 @@ body {
 
         .menu {
             position: relative;
+
+            &:hover path {
+                fill: $colorSelectSite;
+            }
 
             #dropdown:checked~.dropdown__menu {
                 transition: top 0.3s;
@@ -132,7 +141,16 @@ body {
 
     &__personal {
         margin-right: 42px;
+
+        &:hover path {
+            fill: $colorSelectSite;
+        }
     }
+
+    &__basket:hover path {
+        fill: $colorSelectSite;
+    }
+
 }
 
 .top {
