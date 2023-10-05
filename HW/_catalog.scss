@@ -33,7 +33,7 @@
             color: $colorSelectSite;
         }
 
-        &_site {
+        &:last-child {
             font-weight: 700;
             color: $colorSelectSite;
         }

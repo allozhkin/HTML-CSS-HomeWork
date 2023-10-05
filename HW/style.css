@@ -721,7 +721,7 @@ body {
 .top-head .breadcrumbs__link:hover {
   color: #F16D7F;
 }
-.top-head .breadcrumbs__link_site {
+.top-head .breadcrumbs__link:last-child {
   font-weight: 700;
   color: #F16D7F;
 }
