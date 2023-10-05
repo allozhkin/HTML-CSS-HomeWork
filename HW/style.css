@@ -721,7 +721,7 @@ body {
 .top-head .breadcrumbs__link:hover {
   color: #F16D7F;
 }
-.top-head .breadcrumbs__link__link_site {
+.top-head .breadcrumbs__link_site {
   font-weight: 700;
   color: #F16D7F;
 }
@@ -760,6 +760,13 @@ body {
   align-items: center;
   gap: 11px;
   padding-left: 16px;
+  width: 89px;
+}
+.filter-sort .filter__summary:hover path {
+  fill: #F16D7F;
+}
+.filter-sort .filter__summary:hover .filter__heading {
+  color: #F16D7F;
 }
 .filter-sort .filter__heading {
   color: #000;
@@ -767,9 +774,6 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 17px;
-}
-.filter-sort .filter__heading:hover {
-  color: #F16D7F;
 }
 .filter-sort .filter__item {
   margin-top: 16px;
