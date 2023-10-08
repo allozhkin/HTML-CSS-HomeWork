@@ -953,6 +953,9 @@ input::-webkit-inner-spin-button {
   padding: 17px 40px 16px;
   background: none;
   border: 1px solid #A4A4A4;
+  cursor: pointer;
+  outline: inherit;
+  transition: transform 0.2s;
 }
 .cart__buttons_button__text {
   color: #000;
@@ -966,6 +969,8 @@ input::-webkit-inner-spin-button {
   background: #F16D7F;
   color: #fff;
   border: 1px solid #fff;
+  transform: scale(1.04);
+  transition: transform 0.2s;
 }
 .cart__heading {
   color: #222;
@@ -979,7 +984,6 @@ input::-webkit-inner-spin-button {
 .cart__input {
   all: unset;
   border: 1px solid #A4A4A4;
-  width: 360px;
   height: 45px;
   padding-left: 16px;
   color: #B1B1B1;
@@ -1010,11 +1014,14 @@ input::-webkit-inner-spin-button {
   line-height: normal;
   cursor: pointer;
   outline: inherit;
+  transition: transform 0.2s;
 }
 .cart__button:hover {
   background: #F16D7F;
   color: #fff;
   border: 1px solid #fff;
+  transform: scale(1.04);
+  transition: transform 0.2s;
 }
 .cart__total {
   background: #F5F3F3;
@@ -1070,11 +1077,14 @@ input::-webkit-inner-spin-button {
   transition: transform 0.2s;
 }
 .cart__total_button:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
   transition: transform 0.2s;
 }
 .cart__total .subtitle_price {
   margin-left: 35px;
+}
+.cart__right {
+  width: 100%;
 }
 .cart .item {
   max-height: 306px;
