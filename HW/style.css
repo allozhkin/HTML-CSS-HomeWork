@@ -882,6 +882,11 @@ body {
   border: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .cart {
   max-height: 1748px;
   padding-top: 96px;
