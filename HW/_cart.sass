@@ -9,6 +9,7 @@
         flex-direction: column
         gap: 40px
         margin-bottom: 72px
+        width: 652px
     &__discription
         position: relative
         width: 100%
@@ -157,15 +158,14 @@
             border: 1px solid $colorSelectSite
             cursor: pointer
             outline: inherit
+            transition: transform .2s
             &:hover
-                background: #fff
-                color: $colorSelectSite
-                border: 1px solid #fff
+                transform: scale(1.02)
+                transition: transform .2s
         .subtitle_price
             margin-left: 35px
 
     .item
-        width: 652px
         max-height: 306px
         box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13))
         display: flex

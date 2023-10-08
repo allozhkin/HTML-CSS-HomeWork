@@ -894,6 +894,7 @@ body {
   flex-direction: column;
   gap: 40px;
   margin-bottom: 72px;
+  width: 652px;
 }
 .cart__discription {
   position: relative;
@@ -1061,17 +1062,16 @@ body {
   border: 1px solid #F16D7F;
   cursor: pointer;
   outline: inherit;
+  transition: transform 0.2s;
 }
 .cart__total_button:hover {
-  background: #fff;
-  color: #F16D7F;
-  border: 1px solid #fff;
+  transform: scale(1.02);
+  transition: transform 0.2s;
 }
 .cart__total .subtitle_price {
   margin-left: 35px;
 }
 .cart .item {
-  width: 652px;
   max-height: 306px;
   box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
   display: flex;
