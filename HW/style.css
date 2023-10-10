@@ -1211,6 +1211,8 @@ input::-webkit-inner-spin-button {
   position: absolute;
   z-index: -1;
   opacity: 0;
+  outline: 1px solid #F16D7F;
+  border: 2px solid white;
 }
 .registration-left__buttons-radio + label {
   display: inline-flex;
