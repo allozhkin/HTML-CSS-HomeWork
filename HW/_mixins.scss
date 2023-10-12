@@ -21,10 +21,10 @@
     transition: transform .2s;
 }
 
-@mixin registrationTextStyle() {
+@mixin registrationTextStyle($fontSize) {
     color: #000;
     font-family: Lato;
-    font-size: 24px;
+    font-size: $fontSize;
     font-style: normal;
     font-weight: 300;
     line-height: normal;

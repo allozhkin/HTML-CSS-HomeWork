@@ -1,17 +1,4 @@
-// .carousel {
-//     @include centerflex();
-//     justify-content: space-between;
-//     background-color: #F7F7F7;
 
-//     &__button {
-//         margin: 9px;
-//         color: #D8D8D8;
-//     }
-
-//     .my-hover:hover .visually-hidden path {
-//         fill: $colorSelectSite;
-//     }
-// }
 .carousel {
     background-color: #F7F7F7;
 
@@ -97,6 +84,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 129px;
+    padding-top: 65px;
     height: 535px;
 
     &__box {

@@ -71,12 +71,14 @@ body {
             #dropdown:checked~.dropdown__menu {
                 transition: top 0.3s;
                 top: 52px;
+                right: 0;
 
             }
 
             #dropdown:not(:checked)~.dropdown__menu {
                 top: -1000px;
                 transition: top 0.3s;
+                right: 0;
             }
         }
 
