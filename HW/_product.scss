@@ -1,4 +1,3 @@
-
 .carousel {
     background-color: #F7F7F7;
 
@@ -9,8 +8,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         &-slides {
             display: none;
+
+            &_img {
+                width: 100%;
+            }
         }
 
         &-button {
@@ -140,7 +144,7 @@
         font-weight: 300;
         line-height: normal;
         margin-bottom: 32px;
-        width: 555px;
+        max-width: 555px;
     }
 
     &__price {
@@ -158,8 +162,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 641px;
-        border-top: 1px solid #EAEAEA;
+        // width: 641px;
+
         padding-top: 65px;
     }
 
@@ -186,6 +190,13 @@
         &:hover .product-description__cart path {
             fill: #FFF;
         }
+
+    }
+
+    &__line {
+        height: 0px;
+        width: 641px;
+        border: 1px solid #EAEAEA;
     }
 
     .details-choose {

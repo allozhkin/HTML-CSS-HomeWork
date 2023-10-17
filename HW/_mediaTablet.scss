@@ -48,6 +48,7 @@
     }
 
     .item {
+        max-width: 232px;
         min-height: 168px;
 
         &__long {
@@ -95,9 +96,18 @@
         gap: 40px;
     }
 
+    .filter-sort {
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+
     .product-description__box {
         top: 0;
         width: 100%;
+    }
+
+    .top-head {
+        gap: 363px;
     }
 
     .cart {
@@ -127,7 +137,8 @@
 
     .registration {
         gap: 22px;
-        &-left{
+
+        &-left {
             width: 50%;
         }
 
