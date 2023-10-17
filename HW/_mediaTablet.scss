@@ -1,4 +1,4 @@
-@media(min-width:768px) and (max-width:1139px) {
+@media(min-width:768px) and (max-width:1023px) {
     .center {
         @include centerContent(736px);
     }
@@ -48,7 +48,6 @@
     }
 
     .item {
-        max-width: 232px;
         min-height: 168px;
 
         &__long {
