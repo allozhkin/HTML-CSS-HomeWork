@@ -1424,8 +1424,8 @@ input::-webkit-inner-spin-button {
 }
 @media (min-width: 768px) and (max-width: 1139px) {
   .center {
-    padding-left: calc(50% - 367px);
-    padding-right: calc(50% - 367px);
+    padding-left: calc(50% - 368px);
+    padding-right: calc(50% - 368px);
   }
   .top {
     min-height: 363px;
@@ -1458,7 +1458,6 @@ input::-webkit-inner-spin-button {
     margin-bottom: 109px;
   }
   .item {
-    max-width: 232px;
     min-height: 168px;
   }
   .item__long {
@@ -1473,6 +1472,10 @@ input::-webkit-inner-spin-button {
   }
   .product-box {
     margin-bottom: 61px;
+    gap: 16px;
+  }
+  .product-box .product-hide {
+    display: none;
   }
   .advertisments {
     min-height: 610px;
@@ -1490,5 +1493,66 @@ input::-webkit-inner-spin-button {
   .footer {
     align-items: center;
     gap: 40px;
+  }
+  .product-description__box {
+    top: 0;
+    width: 100%;
+  }
+  .cart {
+    flex-wrap: wrap;
+    gap: 64px;
+  }
+  .cart__buttons {
+    justify-content: space-around;
+  }
+  .cart__right {
+    width: 100%;
+  }
+  .cart__right_box {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .cart__forms {
+    width: 50%;
+  }
+  .registration {
+    gap: 22px;
+  }
+  .registration-left {
+    width: 50%;
+  }
+  .registration-right {
+    max-width: 50%;
+  }
+  .registration-right__title {
+    color: #000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 32px;
+  }
+  .registration-right__text {
+    color: #000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 22px;
+  }
+  .registration-right__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style-type: none;
+    color: #000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
 }/*# sourceMappingURL=style.css.map */

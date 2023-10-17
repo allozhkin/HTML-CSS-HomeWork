@@ -1,6 +1,6 @@
 @media(min-width:768px) and (max-width:1139px) {
     .center {
-        @include centerContent(734px);
+        @include centerContent(736px);
     }
 
 
@@ -48,7 +48,6 @@
     }
 
     .item {
-        max-width: 232px;
         min-height: 168px;
 
         &__long {
@@ -67,6 +66,11 @@
 
     .product-box {
         margin-bottom: 61px;
+        gap: 16px;
+
+        .product-hide {
+            display: none;
+        }
     }
 
     .advertisments {
@@ -89,5 +93,64 @@
     .footer {
         align-items: center;
         gap: 40px;
+    }
+
+    .product-description__box {
+        top: 0;
+        width: 100%;
+    }
+
+    .cart {
+        flex-wrap: wrap;
+        gap: 64px;
+
+        &__buttons {
+            justify-content: space-around;
+        }
+
+        &__right {
+            width: 100%;
+
+            &_box {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+
+        }
+
+        &__forms {
+            width: 50%;
+        }
+
+    }
+
+    .registration {
+        gap: 22px;
+        &-left{
+            width: 50%;
+        }
+
+        &-right {
+            max-width: 50%;
+
+            &__title {
+                @include registrationTextStyle(16px);
+                margin-bottom: 32px;
+            }
+
+            &__text {
+                @include registrationTextStyle(16px);
+                margin-bottom: 22px;
+            }
+
+            &__list {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                list-style-type: none;
+                @include registrationTextStyle(16px);
+            }
+        }
     }
 }
